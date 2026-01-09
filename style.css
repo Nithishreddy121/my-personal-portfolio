@@ -1,0 +1,243 @@
+/* ================= GOOGLE FONT ================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom, #eef2ff, #f8fafc);
+    color: #1e293b;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: linear-gradient(90deg, #1e3a8a, #2563eb, #38bdf8);
+    padding: 16px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 18px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: #fde68a;
+}
+
+/* ================= HOME ================= */
+.home-section {
+    min-height: calc(100vh - 70px);
+    text-align: center;
+    padding: 80px 20px;
+    background: radial-gradient(circle at top, #dbeafe, #eff6ff);
+}
+
+.home-section h1 {
+    font-size: 42px;
+    color: #1e3a8a;
+}
+
+.home-section h2 {
+    font-size: 36px;
+    color: #2563eb;
+    margin-top: 5px;
+}
+
+.home-section h3 {
+    font-size: 20px;
+    color: #475569;
+    margin: 12px 0;
+}
+
+.home-section p {
+    max-width: 720px;
+    margin: 20px auto;
+    font-size: 16px;
+    color: #334155;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 34px;
+    background: linear-gradient(90deg, #f97316, #facc15);
+    color: #1e293b;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ================= SECTION BOX ================= */
+.about-section,
+.projects-section,
+.contact-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 45px;
+    background: linear-gradient(to bottom right, #ffffff, #f1f5f9);
+    border-radius: 26px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.1);
+}
+
+.about-section h1,
+.projects-section h1,
+.contact-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1e40af;
+    text-align: center;
+}
+
+/* ================= ABOUT (SINGLE VIEW) ================= */
+.about-single-view {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+.about-grid p {
+    font-size: 15px;
+    color: #334155;
+}
+
+.about-grid h2 {
+    margin-top: 18px;
+    font-size: 18px;
+    color: #2563eb;
+}
+
+/* Skill / Certification Pills */
+.about-grid ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.about-grid li {
+    background: linear-gradient(90deg, #e0e7ff, #f0f9ff);
+    margin: 6px 0;
+    padding: 8px 16px;
+    border-radius: 18px;
+    font-size: 14px;
+}
+
+/* ================= PROJECTS ================= */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.project-card {
+    height: 260px;
+    background: linear-gradient(to bottom right, #ecfeff, #dbeafe);
+    border-radius: 24px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+}
+
+.project-card h2 {
+    font-size: 20px;
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 14px;
+}
+
+.project-card span {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1e293b;
+    background: linear-gradient(90deg, #fde68a, #fca5a5);
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+/* ================= CONTACT ================= */
+.contact-section p {
+    text-align: center;
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+.contact-info {
+    margin-top: 25px;
+}
+
+.contact-info a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-single-view {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-section h1 {
+        font-size: 32px;
+    }
+
+    .home-section h2 {
+        font-size: 28px;
+    }
+}
